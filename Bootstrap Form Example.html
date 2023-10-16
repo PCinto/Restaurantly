@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Form Example</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+        <link href="/images/desk.png" rel="icon">
+
+
+    <style>
+        /* Custom CSS to create rounded form border */
+        .rounded-form {
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body class="bg-secondary">
+<div class="justify-content-center align-items-center mt-2">
+ <a href="Carousel.html" class="btn btn-danger " tabindex="-1" role="button" aria-disabled="true">Carousel Page</a>
+ <a href="index.html" class="btn btn-danger " tabindex="-1" role="button" aria-disabled="true">Booking Page</a>
+  </div>
+
+<form class="rounded-form m-5 bg-primary-subtle p-5">
+    <h1 class="text-danger text-center">Fill This Form</h1><br><br>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 form-group">
+                 <label for="fname" class="form-label mb-3">First Name </label>
+              <input type="text" name="name" class="form-control" id="name" placeholder="First Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-6 col-md-6 form-group mt-3 mt-md-0">
+                <label for="lname" class="form-label mb-3">Last name </label>
+              <input type="text" class="form-control" name="lname" id="lname" placeholder="Last Name" data-rule="email" data-msg="Please enter a valid email">
+
+            </div>
+
+            </div>
+            <div class="col-lg-12 col-md-6 form-group mt-3">
+                <label for="address" class="form-label mb-3">Address </label>
+              <input type="text" name="text" class="form-control" id="address" placeholder="Address" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+
+            </div>
+
+            <div class="row">
+            <div class="col-lg-6 col-md-6 form-group mt-3">
+                <label for="city" class="form-label mb-3">City </label>
+              <input type="text" name="text" class="form-control" id="city" placeholder="City" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+
+            </div>
+
+                <div class="col-lg-3 col-md-6 form-group mt-3">
+                    <label for="state" class="form-label mb-3">State </label>
+                <select name="" id="state"  class="form-control" data-rule="minlen:4"><br>
+            <option value="">Select State</option>
+            <option value="">Nairobi</option>
+            <option value="">Narok</option>
+            <option value="">Kisii</option>
+            <option value="">Mombasa</option>
+            <option value="">Naivasha</option>
+                </select>
+                </div>
+
+            <div class="col-lg-3 col-md-6 form-group mt-3">
+                <label for="pin" class="form-label mb-3">Pin Code </label>
+              <input type="text" name="text" class="form-control" id="pin" placeholder="Pin Code" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            </div>
+            </div>
+
+              <br><input type="checkbox" id="check">
+    <label for="check" class="check">I Agree To Terms and Conditions</label><br><br>
+    <div><button type="submit" class="btn btn-outline-primary">Submit</button></div>
+        </form>
+
+</body>
+</html>
